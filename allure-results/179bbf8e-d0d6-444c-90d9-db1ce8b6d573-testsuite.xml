@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1584389936012' stop='1584389985011'>
+    <name>Suite: E2E Tests</name>
+    <title>Suite: E2E Tests</title>
+    <test-cases>
+        <test-case start='1584389936014' status='passed' stop='1584389940346'>
+            <name>should open Home Page of App</name>
+            <title>should open Home Page of App</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1584389940356' status='broken' stop='1584389985007'>
+            <name>Test for Valid Card</name>
+            <title>Test for Valid Card</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element (".button-main") still not displayed after 8000ms</message>
+                <stack-trace>Error: element (".button-main") still not displayed after 8000ms
+                    at C:\Dkat\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Dkat\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Dkat\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Dkat\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Dkat\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Dkat\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Dkat\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Dkat\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Dkat\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at CheckOutComponent.clickContinue (C:\Dkat\PageObjects\CheckOut.po.js:13:24)
+                    at Context.&lt;anonymous> (C:\Dkat\Specs\e2eTests.spec.js:12:14)
+                    at Context.executeSync (C:\Dkat\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Dkat\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

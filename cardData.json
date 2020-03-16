@@ -1,0 +1,14 @@
+{
+  "SuccessCard": {
+    "cardNumber": "4811111111111114",
+    "expiryDate": "0220",
+    "cvv": "123",
+    "bankOTP": "112233"
+  },
+  "FailureCard": {
+    "cardNumber": "4911111111111113",
+    "expiryDate": "0220",
+    "cvv": "123",
+    "bankOTP": "112233"
+  }
+}
