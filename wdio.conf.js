@@ -68,7 +68,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
@@ -125,11 +125,11 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     //reporters: ['spec'],
-    reporters: [
-        ['mochawesome',{
-            outputDir: './Results'
-        }]
-    ],
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }], 'spec'],
  
     //
     // Options to be passed to Mocha.
@@ -247,10 +247,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: function(exitCode, config, capabilities, results) {
-        const mergeResults = require('wdio-mochawesome-reporter/mergeResults')
-        mergeResults('./Results', "results-*")
-    },
+    // onComplete: function(exitCode, config, capabilities, results) {
+    //     const mergeResults = require('wdio-mochawesome-reporter/mergeResults')
+    //     mergeResults('./Results', "results-*")
+    // },
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

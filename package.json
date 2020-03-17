@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "allure-report": "node_modules/.bin/allure generate ./test/reports/allure-results && allure open",
-    "generateMochawesome":"marge ./Results/wdio-ma-merged.json --reportTitle 'My Project Results'"
+    "allure-report": "node_modules/.bin/allure generate --clean ./test/reports/allure-results && allure open",
+    "generateMochawesome": "marge ./Results/wdio-ma-merged.json --reportTitle 'My Project Results'"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
     "@wdio/spec-reporter": "^5.18.7",
     "@wdio/sync": "^5.20.1",
     "chromedriver": "^80.0.1",
+    "mochawesome-report-generator": "^4.1.0",
     "wdio-chromedriver-service": "^5.0.2",
-    "wdio-mochawesome-reporter": "^3.2.0",
-    "mochawesome-report-generator": "^4.1.0"
+    "wdio-mochawesome-reporter": "^3.2.0"
   }
 }
