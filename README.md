@@ -7,7 +7,7 @@
 
 
 Below Report will be displayed after test run:
-
+```bash
  "spec" Reporter:
 ------------------------------------------------------------------
 [chrome  windows #0-0] Spec: C:\Dkat\Specs\e2eTests.spec.js
@@ -23,3 +23,4 @@ Below Report will be displayed after test run:
 
 Spec Files:      1 passed, 1 total (100% completed) in 00:01:23
 ------------------------------------------------------------------
+```
